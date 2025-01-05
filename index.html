@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Poll</title>
+  <title>Interactive Poll & Weather</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,8 +21,13 @@
       <button type="submit">Vote</button>
     </form>
 
-    <h2>Results</h2>
+    <h2>Poll Results</h2>
     <p id="results">Please vote above to see the results.</p>
+
+    <h2>Weather Information</h2>
+    <input type="text" id="city" placeholder="Enter city name" />
+    <button id="getWeather">Get Weather</button>
+    <div id="weatherData"></div>
   </div>
   <script src="script.js"></script>
 </body>
