@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Poll</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>What's your favorite programming language?</h1>
+    <form id="pollForm">
+      <input type="radio" id="js" name="language" value="JavaScript">
+      <label for="js">JavaScript</label><br>
+      <input type="radio" id="python" name="language" value="Python">
+      <label for="python">Python</label><br>
+      <input type="radio" id="java" name="language" value="Java">
+      <label for="java">Java</label><br>
+      <input type="radio" id="c" name="language" value="C++">
+      <label for="c">C++</label><br>
+      <button type="submit">Vote</button>
+    </form>
+
+    <h2>Results</h2>
+    <p id="results">Please vote above to see the results.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
