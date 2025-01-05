@@ -3,31 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Poll & Weather</title>
+  <title>Endless Quiz with Levels</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>What's your favorite programming language?</h1>
-    <form id="pollForm">
-      <input type="radio" id="js" name="language" value="JavaScript">
-      <label for="js">JavaScript</label><br>
-      <input type="radio" id="python" name="language" value="Python">
-      <label for="python">Python</label><br>
-      <input type="radio" id="java" name="language" value="Java">
-      <label for="java">Java</label><br>
-      <input type="radio" id="c" name="language" value="C++">
-      <label for="c">C++</label><br>
-      <button type="submit">Vote</button>
-    </form>
-
-    <h2>Poll Results</h2>
-    <p id="results">Please vote above to see the results.</p>
-
-    <h2>Weather Information</h2>
-    <input type="text" id="city" placeholder="Enter city name" />
-    <button id="getWeather">Get Weather</button>
-    <div id="weatherData"></div>
+    <h1>Endless Quiz</h1>
+    <div id="level-container">
+      <p>Level: <span id="level">1</span></p>
+      <p>Points: <span id="points">0</span></p>
+    </div>
+    <div id="question-container">
+      <p id="question"></p>
+      <div id="choices"></div>
+      <button id="next-button" onclick="nextQuestion()">Next</button>
+    </div>
+    <div id="score-container">
+      <h2>Your Score: <span id="score">0</span></h2>
+    </div>
+    <button id="stop-button" onclick="stopQuiz()">Stop Quiz</button>
   </div>
   <script src="script.js"></script>
 </body>
